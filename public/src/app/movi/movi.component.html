@@ -1,0 +1,18 @@
+<!-- remove the mouse enter -->
+<div class="gui-card__media" (mouseenter)="playVideo($event)" (mouseout)="stopVideo()">
+
+  <video class="gui-card__video " #allt loop muted>
+    <source src="{{url}}" type="video/mp4">
+  </video></div>
+<div class="gui-card__details">
+  <!-- Later figure out how to make foavourite appear and disappear on hover event -->
+  <div class="gui-card__title" (mouseenter) = "checkOn()" >
+      <!-- (mouseout)="checkOff()" -->
+    <a href="{{url}}">{{name}}</a>
+
+    <button *ngIf='check' (click)=addTolist(url,name)><img class="heart"
+        src="https://cdn0.iconfinder.com/data/icons/basic-ui-elements-colored/700/08_heart-2-512.png" alt=""></button>
+     
+  </div>
+
+</div>

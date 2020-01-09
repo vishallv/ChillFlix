@@ -1,0 +1,43 @@
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <div class="browse">
+        <div class="logo">
+            <img src="https://fontmeme.com/permalink/191118/c32394ef3c2be517f828476ed49e14a8.png" alt="netflix-font"
+                border="0">
+        </div>
+        <div class="links">
+            <a [routerLink]="['/browse']">Home</a>
+            <a [routerLink]="['/shows']">TV Shows</a>
+            <a href="">Movies</a>
+            <a href="">Recently Added</a>
+            <a href="">My List</a>
+        </div>
+        <div class="info">
+            <a href="">DVD</a>
+            <a href="">My Account</a>
+            <a [routerLink]="['/']">Log Out</a>
+        </div>
+
+        <h1>My List</h1>
+        <app-movies [moviesUrl]='mylist'></app-movies>
+    
+        <!-- <div *ngIf = 'items' class="allMovies">
+            <div   *ngFor = "let val of items" class="movie"></div>
+        </div> -->
+        <!-- <app-jumbo [url]='jumbo'></app-jumbo>
+        <h1>Continue Watching</h1>
+        <app-movies [moviesUrl]='cwatch'></app-movies>
+        <h1>All movies</h1> -->
+        <!-- <div *ngIf = "false"> -->
+        <!-- <app-movies [moviesUrl]='moviesUrl'></app-movies>
+        <h1>Shows</h1>
+        <app-movies [moviesUrl]='showUrl'></app-movies>
+     -->
+        <!-- </div> -->
+    
+    
+    
+    
+    </div>

@@ -1,0 +1,22 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<div class="jumbotron jumbotron-fluid" (mouseenter)="playVideo($event)" (mouseout)="stopVideo()">
+
+    <video #jum muted loop>
+        <source src="{{url.name}}" type="video/mp4">
+
+    </video>
+
+    <div class="container text-white">
+
+        <h1 class="display-4">Chillflix Series</h1>
+        <h2>{{url.show}} </h2>
+
+        <a class="btn btn-primary btn-lg" href="{{url}}" role="button">Watch Now</a>
+
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.jumbotron -->

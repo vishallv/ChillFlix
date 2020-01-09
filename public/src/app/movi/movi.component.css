@@ -1,0 +1,35 @@
+video{
+    width: 300px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    
+
+
+}
+a:hover{
+    text-decoration: none;
+    color: lightgray;
+}
+.heart{
+    width: 25px;
+    background-color: black;
+    /* margin: 0px;
+    padding: 0px; */
+}
+button{
+    margin-left: 10px;
+    background-color: black;
+    border-color: black;
+    /* border-style: none; */
+    /* overflow: hidden; */
+    /* outline-style: none; */
+    /* outline: none;
+    border: none; */
+    
+}
+button:focus{
+    outline: none;
+    /* border: none; */
+}
